@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="artifactml.xsd" lang="en">
+  <title>TODO App</title>
+  <main>
+    <section>
+      <title>Tasks</title>
+      <tasklist>
+        <task completed="true">
+          <title>Buy milk</title>
+        </task>
+        <task>
+          <title>Call mom</title>
+        </task>
+        <task>
+          <title>Finish report</title>
+        </task>
+      </tasklist>
+    </section>
+    <section>
+      <title>Add new task</title>
+      <interaction>
+        <label>Task:</label>
+        <input type="text"/>
+        <action>Add task</action>
+      </interaction>
+    </section>
+  </main>
+</application>

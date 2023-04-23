@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+  <xs:element name="application">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="title" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="main" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute name="lang" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="title">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="lang" type="xs:string" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="main">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="display" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="keypad" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Other ArtifactML elements are defined similarly -->
+
+</xs:schema>
